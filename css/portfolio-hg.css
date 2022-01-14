@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+/*font-family: 'Syncopate', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Syncopate:wght@400;700&display=swap');
+/*font-family: 'Gothic A1', sans-serif;*/
+:root {
+    --mc:#000000;
+    --ff:#ffffff;
+    --lc:#f7f7f7;
+    --dc:#444444;
+    --gc:#dddddd;
+    --bg:#3555e4;
+    --bg2:#7188ec;
+}
+*{outline:1px solid #f00--;}
+html {font-size:20px;}
+body {font-size:0.8rem;color:var(--dc);}
+
+#wrap {min-width:1900px;color:var(--ff);}
+/*----------header 고정--------------*/
+/*--헤드라인--*/
+#header {}
+#header h1 {position:fixed;top:1.5rem;left:0;z-index:999;width:100%;}
+#header h1 a {display:block;}
+#header h1 strong {display:block;font-size:1.5rem;line-height:1.2;font-family: 'Syncopate', sans-serif;border-bottom:1px solid var(--ff);padding:0 0 1rem 2rem;letter-spacing:0.1em;}
+#header h1 strong:after {content:"";display:block;width:1rem;height:0.2rem;background:var(--ff);border-radius:40%;position:absolute;top:0.8rem;left:7.5rem;}
+
+/*--스크롤바--*/
+#header nav {position:fixed;top:50%;left:3rem;transform:translateY(-50%);z-index:999;}
+#header nav li a {position: relative;display:block;font-family: 'Syncopate', sans-serif;line-height:2;font-size:0;}
+#header nav li a:after {content:"";display:block;width:0;height:0.1rem;background:var(--ff);}
+#header nav li.on a {font-size:0.8rem;}
+#header nav li.on a:after {width:100%;}
+/*--햄버거메뉴--*/
+#header .cover_btn {width:30px;height:20px;position:fixed;top:3rem;right:3rem;z-index:999;}
+#header .cover_btn span {width:100%;height:10px;background:var(--ff);}
+
+/*----------header 고정--------------*/
+.section {background:var(--bg2);color:var(--ff);}
+.section:nth-child(even) {background:var(--bg);color:var(--ff);}
+.section img {max-width:100%;}
+.section .mockup {background:url(./lib/bate/mac11.png)no-repeat center top/100%;padding:7.5% 10% 8% 10%;}
+.section .mockup figure {position: relative;padding-bottom:56.25%;overflow:hidden;}
+.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:1s;cursor: pointer;}
+.section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
+.container {position: relative; display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center; width:70rem;margin:0 auto;}
+
+.section .description h3 {font-size:2.5rem;font-weight:600;margin-bottom:1rem;}
+.section .description p {font-size:0.75rem;font-weight:300;margin-bottom:2rem;}
+.section .description dl {display:flex;line-height:1.5rem;border-bottom:1px solid var(--gc);}
+.section .description dl dt {width:6rem;}
+.section .description dl dt:before {content:"\e922";font-family: xeicon!important;margin-right:0.5rem;}
+.section .description dl:last-of-type {margin-bottom:2rem;}
+.section .description dd span {display:inline-block;width:1rem;height:1rem;border-radius:50%;vertical-align:middle;}
+.section .description ul {display:flex;gap:0.5rem;}
+.section .description ul a {display:block;background:var(--mc);color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
+.section .description dd strong {vertical-align:middle;margin-right:1rem;}
+
+.portfolio_01 .description dd span:nth-of-type(1) {background:#1234;}
+.portfolio_01 .description dd span:nth-of-type(2) {background:#5678;}
+.portfolio_01 .description dd span:nth-of-type(3) {background:#910;}
+
+.portfolio_02 .description dd span:nth-of-type(1) {background:#523451;}
+.portfolio_02 .description dd span:nth-of-type(2) {background:#;}
+.portfolio_02 .description dd span:nth-of-type(3) {background:#910;}
+
+/*----------intro section01 첫페이지--------------*/
+#main .intro {text-align:center;}
+#main .intro .container {position: relative; display:block;grid-template-columns:none;gap:none;align-items:center; width:70rem;margin:0 auto;}
+#main .intro h2 {display:block;font-size:3rem;font-weight:700; font-family: 'Syncopate', sans-serif;margin-bottom:0.5rem;}
+#main .intro p {font-size:1.3rem;font-weight:300;letter-spacing:-0.025em;font-family: 'Gothic A1', sans-serif;line-height:1.4;}
+#main .intro strong {font-size:1.5rem;font-weight:700;font-family: 'Gothic A1', sans-serif;}
+
+
+
+
+.intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--ff);font-size:0;border-radius:0.7rem;opacity:0.5;}
+.intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--ff);border-radius:0.1rem;animation:wheel 0.5s infinite;}
+
+@keyframes wheel {
+    to {top:0.6rem;}
+}
+
+.box_mask {width:20rem;position: relative;}
+
+#cover { display:none;position:fixed;top:0;left:0;background:rgba(0, 0, 0, 0.3);width:100%;height:100vh;z-index:998;}
+
+#cover {position:absolute;top:50%;left:50%;transform:;}
+
+
+
+.profile .inner {position:relative;width:20rem;height:20rem;padding:1rem;border:1px solid rgba(0, 0, 0, 0.15);border-radius:50%;}
+.profile .inner strong {display:block;width:18rem;border-radius:50%;overflow:hidden;}
+.profile .inner span {position:absolute;top:0;left:calc(50% - 0.5rem);width:1rem;height:10rem;font-size:0;animation:circle_thoto 2s infinite linear;transform-origin:bottom;}
+.profile .inner span::after {content:"";display:block;width:1rem;height:1rem;background:var(--mc);border-radius:50%;margin-top:-0.5rem;}
+@keyframes circle_thoto {
+    0% {transform:rotate(0);}
+    100% {transform:rotate(1turn);}
+    
+}
+
+.portfolio_04 .. {overflow:hidden;}
+.portfolio_04::before {content:"";display:block;width:40rem;height:40rem;background:var(--mc);border-radius:50%;position:absolute;top:50%;left:0;}
+.portfolio_04::after {content:"";display:block;width:10rem;height:10rem;background:var(--mc);border-radius:50%;position:absolute;top:50%;left:25%;animation:circle_move 2s infinite;}
+
+@keyframes circle_move {
+    0% {top:50%;left:25%;opacity:1;}
+    100% {top:0;left:50%;opacity:0;}
+}
+
+
+
+
+#footer .toTop {position:fixed;bottom:3rem;right:3rem;z-index:999;}
+#footer address {position:fixed;bottom:3rem;left:3rem;z-index:999;}
