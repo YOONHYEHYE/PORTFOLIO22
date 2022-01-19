@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+
+.container {width:1200px; margin:0 auto;padding:0 15px;}
+#wrap {position: relative;}
+* {outline: 1px solid #f00--;}
+@media screen and (max-width:768px) {
+    
+    .wrap {min-width:auto;}
+}
+
+/*--------------------헤더 메인메뉴 - 다단메뉴, 반응형 -------------------*/
+#header {font-family: 'Inter', sans-serif;position:fixed;top:0;left:0;z-index:999;width:100%;}
+#header.on {border-bottom:1px solid #ddd;}
+/*---헤더 탑 - 로고, 아이콘 ---*/
+#header .top {background:rgba(0, 0, 0, 1);width:100%;}
+#header .top .container {}
+#header .top .left {float:left;}
+#header .top .left a {line-height:3.6;color:#fff;font-size:16px;font-family: 'Inter', sans-serif;padding:5px 10px;border:1px solid #fff;}
+#header .top .left a:nth-child(2) {margin-left:10px;}
+#header .top h1 {float:left;margin:0 311px 0 398px;line-height:3;}
+#header .top h1 img {width:150px;}
+#header .top .right {color:#fff;font-size:20px;}
+#header .top .right i {margin-left:36px;line-height:3;}
+/*---헤더 언더 - 메뉴 ---*/
+#header .under {background:#fff;width:100%;color:#000;height:40px;}
+#header .under .container {}
+#header .under nav {}
+#header .under nav>ul{}
+#header .under nav>ul>li {float:left;margin-right:106px; position:relative;line-height:2.5;font-weight:500;z-index:1;}
+#header .under nav>ul>li:before {content:"";display:block;width:110%;height:0;background:#000;position:absolute;top:0;left:-5%;z-index:-1;}
+#header .under nav>ul>li:last-child {margin-right:0px;}
+/*---헤더 언더 - 다단메뉴 ---*/
+#header .under .gnb {display:none;position:absolute;top:40px;left:-5%;text-align:left;background:#fff;color:#000;z-index:999; transition:0.3s;}
+#header .under .gnb li {padding:0 30px;border-bottom:1px solid #ddd;position: relative;font-size:15px;font-weight:500;color:rgb(95, 95, 95);}
+#header .under .gnb li:last-child {border-bottom:none;}
+#header .under .gnb li::before {content:"\e922";font-family: xeicon!important;display:block;font-size:20px;border-radius:50%;position:absolute;top:50%;left:8px;transform:translateY(-50%) rotate(0deg);transition:0.3s;}
+#header .under .g01 {width:200px;}
+#header .under .g02 {width:200px;}
+#header .under .g03 {width:250px;}
+#header .under .g04 {width:300px;}
+#header .under .g05 {width:250px;}
+#header .under .g06 {width:250px;}
+#header .under .g07 {width:200px;}
+/*---헤더 언더 - 다단메뉴 호버효과 ---*/
+#header .under nav>ul>li:hover .gnb {display:block;}
+#header .under nav>ul>li:hover {color:#fff;}
+#header .under nav>ul>li:hover:before {height:40px;transition:0.3s;}
+#header .under .gnb>li:hover {color:#fff;background:#000;}
+#header .under .gnb>li:hover:before {color:#fff;position:absolute;top:50%;left:8px;transform:translateY(-50%) rotate(135deg);}
+
+.mopen {display:none;}
+.respn {display:none;}
+
+/*--- @@@@@@헤더 반응형@@@@@@@ ---*/
+@media screen and (max-width:768px) {   
+    /*--------------------헤더 메인메뉴 - 다단메뉴, 반응형 -------------------*/
+    #header {font-family: 'Inter', sans-serif;}
+    /*---헤더 탑 - 로고, 아이콘 ---*/
+    #header .top {background:rgba(0, 0, 0, 1);width:auto;height:100%;}
+    #header .top .container {width:auto;}
+    #header .top .left {display:none;}
+    #header .top h1 {float:none;margin:0 0 0 0;line-height:4;}
+    #header .top h1 img {width:130px;}
+    #header .top .right {display:none;}
+
+    /*---헤더 언더 - 반응형 로그인 ---*/
+    #header .under .respn {display:block;margin-left:20px;}
+    #header .under .top01 a {line-height:5;padding:15px 25px;border:1px solid #000;}
+    #header .under .top01 a:nth-child(1) {background:#000;color:#fff;margin-right:10px;}
+    /*---헤더 언더 - 메뉴 ---*/
+    #header .under {background:#fff;width:calc(100% - 120px);color:#000;height:100vh;border-right:1px solid #ddd;}
+    #header .under .container {width:auto;padding:0;}
+    #header .under nav {margin-bottom:20px;}
+    #header .under nav>ul{}
+    #header .under nav>ul>li {float:none; margin-right:0px; position:relative;line-height:2.5;font-weight:500;z-index:1;padding-left:20px;border-bottom:1px solid #000;}
+    #header .under nav>ul>li:before {content:"";display:none;width:110%;height:0;background:#000;position:absolute;top:0;left:-5%;z-index:-1;}
+    #header .under nav>ul>li:last-child {margin-right:0px;}
+    /*---헤더 언더 - 다단메뉴 ---*/
+    #header .under .gnb {display:none;position:static;top:40px;left:-5%;text-align:left;background:#fff;color:#000;z-index:999;opacity:0; transition:0.3s;}
+    #header .under .gnb li {padding:0 30px;border-bottom:1px solid #ddd;position: relative;font-size:15px;font-weight:500;color:rgb(95, 95, 95);}
+    #header .under .gnb li:last-child {border-bottom:none;}
+    #header .under .gnb li::before {content:"\e922";font-family: xeicon!important;display:block;font-size:20px;border-radius:50%;position:absolute;top:50%;left:8px;transform:translateY(-50%) rotate(0deg);transition:0.3s;}
+    #header .under .g01 {width:200px;}
+    #header .under .g02 {width:200px;}
+    #header .under .g03 {width:250px;}
+    #header .under .g04 {width:300px;}
+    #header .under .g05 {width:250px;}
+    #header .under .g06 {width:250px;}
+    #header .under .g07 {width:200px;}
+    /*---헤더 언더 - 반응형 cs ---*/
+    #header .under .down01 {}
+    #header .under .down01 i {font-size:16px; padding:5px;background:#000;color:#fff;border-radius:50%;}
+    #header .under .down01 a {font-size:18px;font-weight:500;}
+    #header .under .down01 p {line-height:1.5;margin-left:30px;}
+    #header .under .down01 strong {font-weight:600;}
+    
+    /*---헤더 언더 - 다단메뉴 호버효과 ---*/
+    #header .under nav>ul>li:hover .gnb {opacity:1;}
+    #header .under nav>ul>li:hover {color:#000;}
+    #header .under nav>ul>li:hover::before {height:40px;transition:0.3s;}
+    #header .under .gnb li:hover {color:#fff;background:#000;}
+    #header .under .gnb li:hover:before {color:#fff;position:absolute;top:50%;left:8px;transform:translateY(-50%) rotate(135deg);}  
+   
+    /*---헤더 반응형 햄버거메뉴 ---*/
+    .mopen {display:block;width:30px;height:20px;position:fixed;top:20px;right:15px;}
+    .mopen span {display:block;width:100%;height:3px;background:#fff;position:absolute;top:0;left:0;border-radius:10px;}
+    .mopen span:nth-child(1) {top:0;}
+    .mopen span:nth-child(2) {top:50%;}
+    .mopen span:nth-child(3) {top:50%;}
+    .mopen span:nth-child(4) {top:100%;}
+
+}
+
+/*--------------------메인 비주얼 - 슬릭슬라이드 -------------------*/
+#visual {padding-top:100px;position: relative;}
+#visual .main_slider {}
+#visual .main_slider figure {height:800px;position: relative;}
+
+#visual .main_slider .main01 {background:url(../img/visual03.jpg)no-repeat center center/cover}
+#visual .main_slider .main02 {background:url(../img/visual02.jpg)no-repeat center center/cover}
+#visual .main_slider .main03 {background:url(../img/visual01.jpg)no-repeat center center/cover}
+
+#visual .main_slider figure .container {position:absolute;justify-content:center; top:50%;left:50%;transform:translate(-50%, -50%);text-align:center; color:#fff;}
+
+#visual .main_slider figure h3 {font-family: 'Inter', sans-serif;font-size:60px;font-weight:550;margin-bottom:20px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on h3 {opacity:1;transform:translateY(0);transition:0.5s;}
+
+#visual .main_slider figure p {font-size:20px;font-weight:300; margin-bottom:30px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on p {opacity:1;transform:translateY(0);transition:0.5s 0.5s;}
+
+#visual .main_slider figure a {display:block;width:150px;line-height:50px; border:1px solid #fff;margin:0 auto; text-align:center;font-family: 'Inter', sans-serif;font-size:25px;font-weight:400;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on a {opacity:1;transform:translateY(0);transition:0.5s 0.5s;}
+
+#visual .btn {position:absolute;top:50%;left:20%;transform:translate(-50% -50%); font-size:60px;color:#fff;}
+
+#visual .btn .xi-angle-left-thin {margin-right:500px;}
+#visual .btn .xi-angle-right-thin {margin-left:500px;}
+
+
+/*--------------------시트워머 content01 - 호버효과 -------------------*/
+#content01 {padding:120px 0;height:1030px;}
+#content01>h2 {font-size:32px;font-weight:600;margin-bottom:10px;font-family:'Inter', sans-serif;text-align:center;}
+#content01>p {font-weight:300;margin-bottom:20px;text-align:center;}
+#content01>a {display:block;font-family:'Inter', sans-serif;width:85px;font-size:18px;background:none;padding:8px 12px; border-radius:50%;background:#000;color:#fff;margin:0 auto 50px auto;text-align:center;}
+#content01 .container {width:1200px; margin:0 auto;padding:0 15px;}
+/*con01*/
+#content01 .container .con01 {width:530px;height:620px;float:left;margin-right:20px;border:3px groove #000;overflow:hidden; position: relative;}
+#content01 .container .con01 figure {width:100%;height:100%;background:url(../img/warmer06.jpg)no-repeat center center/cover;overflow:hidden;transition:0.4s;}
+#content01 .container .con01 .txt {width:530px;bottom:-100px;padding:0 60px;transition:0.4s;}
+#content01 .container .con01 .txt:before {width:530px;height:180px;}
+/*con02*/
+#content01 .container .con02 {width:300px;height:300px;float:left;margin:0 20px 20px 0;border:3px groove #000;position:relative;overflow:hidden;}
+#content01 .container .con02 figure {width:100%;height:100%;background:url(../img/warmer08.jpg)no-repeat center center/cover;overflow:hidden;}
+#content01 .container .con02 .txt {width:300px;bottom:-100px;padding-left:20px;transition:0.4s;}
+#content01 .container .con02 .txt h3 {line-height:1.2;}
+#content01 .container .con02 .txt:before {width:295px;height:120px;}
+/*con03*/
+#content01 .container .con03 {width:300px;height:300px;float:left;border:3px groove #000;position: relative;overflow:hidden;}
+#content01 .container .con03 figure {width:100%;height:100%;background:url(../img/warmer14.jpg)no-repeat center center/cover;overflow:hidden;}
+#content01 .container .con03 .txt {width:300px;bottom:-100px;padding-left:20px;transition:0.4s;}
+#content01 .container .con03 .txt h3 {line-height:1.2;}
+#content01 .container .con03 .txt:before {width:295px;height:120px;}
+/*con04*/
+#content01 .container .con04 {width:620px;height:300px;float:left;border:3px groove #000;position: relative;overflow:hidden;}
+#content01 .container .con04 figure {width:100%;height:100%;background:url(../img/warmer10.jpg)no-repeat top center/cover;overflow:hidden;transition:0.4s;}
+#content01 .container .con04 .txt {width:300px;bottom:-100px;padding-left:20px;transition:0.4s;}
+#content01 .container .con04 .txt h3 {line-height:1.2;}
+#content01 .container .con04 .txt:before {width:620px;height:100px;}
+
+/*텍스트*/
+#content01 .container .txt {position:absolute;bottom:0;left:0;color:#fff;z-index:99;}
+#content01 .container .txt h3 {margin-bottom:10px;}
+#content01 .container .txt p {float:left;margin-right:20px;}
+#content01 .container .txt i:nth-child(1) {float:left;}
+#content01 .container .txt:before {content:"";display:block;position:absolute;top:50%;left:0;transform:translateY(-50%);background:rgba(0, 0, 0, 0.5);z-index:-1;}
+
+/*-----호버효과------*/
+/*con01*/
+#content01 .container .con01:hover figure {background:url(../img/warmer05.jpg)no-repeat center center/cover;}
+#content01 .container .con01:hover .txt {bottom:60px;}
+/*con02*/
+#content01 .container .con02:hover figure {background:url(../img/warmer09.jpg)no-repeat center center/cover;}
+#content01 .container .con02:hover .txt {bottom:25px;}
+/*con03*/
+#content01 .container .con03:hover figure {background:url(../img/warmer15.jpg)no-repeat center center/cover;}
+#content01 .container .con03:hover .txt {bottom:25px;}
+/*con04*/
+#content01 .container .con04:hover figure {background:url(../img/warmer11.jpg)no-repeat center center/cover;}
+#content01 .container .con04:hover .txt {bottom:18px;}
+
+
+
+
+/**-------------------- 라이카 콜라보 banner content02 --------------------**/
+#content02 {padding:50px 0;text-align:center;height:400px; background:url(../img/laica-g7.jpg)no-repeat center center/cover;background-attachment:fixed;color: #fff;}
+#content02 h2 {height:200px;}
+#content02 p {font-weight:300; margin-bottom:30px;}
+#content02 a {font-size:18px;background:none;padding:5px 12px; border-radius:50%;outline:1px solid #fff;}
+#content02 a:hover {font-size:20px;font-weight:600; background:#fff;padding:5px 12px; border-radius:50%;outline:none;color: #000;}
+
+#content02 img {width:100%;}
+/**-------------------- 베스트셀러 banner content03 --------------------**/
+#content03 {padding:150px 0;height:1400px;}
+#content03 .container {width:1200px;margin:0 auto;}
+
+#content03 .hd {float:left;width:32%; margin:0.4rem;background:#000;text-align:center;padding:128px 0;}
+#content03 .hd h2 {font-size:30px;font-weight:600;margin-bottom:50px;font-family:'Inter', sans-serif;color:#fff;}
+#content03 .hd a {display:block;font-family:'Inter', sans-serif;width:85px;font-size:18px;background:none;padding:8px 12px; border-radius:50%;border:1px solid #fff;color:#fff;margin:0 auto;}
+
+#content03 .container figure {position:relative;float:left;overflow:hidden;width:32%;margin:0.4rem;border:1px solid #ddd;}
+#content03 .container figure:after {content:"";display:block;width:40px;height:40px;background:#000;position:absolute;top:0;left:0;}
+#content03 .container figure img {width:100%;transition:0.4s;}
+#content03 .container figure p {position:absolute;top:9px;left:13px;color:#fff;z-index:1;font-size:20px;font-family:'Inter', sans-serif;}
+#content03 .container .caption {position:absolute;bottom:-80px;left:0; font-size:15px;color:#fff;z-index:1;padding-left:20px;transition:0.4s;}
+#content03 .container .caption:before {content:"";display:block;background:rgba(0, 0, 0, 0.5);width:400px;height:100px;position:absolute;top:50%;left:0;transform:translateY(-50%);z-index:-1;}
+#content03 .container .caption strong{display:block; margin-bottom:5px;line-height:1.2;}
+#content03 .container .caption span{margin-bottom:10px;}
+#content03 .container .caption i {font-size:20px;}
+
+/*호버효과*/
+#content03 .container figure:hover img {transform:scale(1.12);}
+#content03 .container figure:hover .caption {bottom:20px;}
+
+
+
+/** ----------------------------룩북 배너 슬라이드------------------------ **/
+#banner_slider {}
+#banner_slider .container {padding:100px 0;display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;}
+#banner_slider img {max-width:100%;}
+#banner_slider .pic {width:50%;}
+#banner_slider .dis {display:flex;width:50%;text-align:center;padding:0 15px;}
+#banner_slider .dis_con {margin:0 auto;padding:100px 0;}
+#banner_slider .dis_con h3 {font-size:25px;font-weight:600;margin-bottom:10px;}
+#banner_slider .dis_con p {font-weight:300;margin-bottom:30px;}
+#banner_slider .dis_con a {background:#fff;border-radius:50%;outline:1px solid #000;text-align:center;padding:5px;vertical-align:middle;}
+#banner_slider .dis_con a:hover {font-size:16px;background:#fff;border-radius:50%;background:#000;color: #fff; text-align:center;padding:5px;vertical-align:middle;}
+
+/** --------------------터그 제품 슬라이드---------------------------- **/
+#pr_slider {position:relative;padding:100px;text-align:center;}
+#pr_slider h2 {font-size:30px;font-weight:600;margin-bottom:50px;}
+#pr_slider .container {width:1600px;margin:0 auto;}
+#pr_slider img {max-width:100%;}
+#pr_slider .slider {display:flex;}
+#pr_slider figure {padding:0 10px;}
+#pr_slider figure .case {overflow:hidden;margin-bottom:10px;}
+#pr_slider figure img {transition:0.4s;}
+#pr_slider figure:hover img {transform:scale(1.15);}
+#pr_slider strong {font-size:15px;}
+#pr_slider span {font-size:15px;}
+#pr_slider .arrows i {position:absolute;top:55%;left:49.5%;transform:translate(-50% -50%);z-index:1;background:#000;color:#fff;border-radius:50%;padding:5px;}
+#pr_slider .arrows i.xi-arrow-left {margin-left:-575px;}
+#pr_slider .arrows i.xi-arrow-right {margin-left:575px;}
+
+
+
+/**---------------------------푸터-------------------------------------------**/
+#footer {background:#111;color:#888;padding-bottom:30px;}
+#footer .container {width:1200px;margin:0 auto;padding:30px 15px 0 15px;display:flex;}
+#footer .title {font-size:16px;font-weight:500; text-align:center;margin-bottom:15px;}
+
+
+#footer hr {outline:none;border:none;border-bottom:1px solid #444;}
+/*푸터-위 이용약관*/
+#footer .custumor {display:flex;width:600px;margin:0 auto;padding:10px 0;justify-content:space-between;font-size:13px;}
+#footer .custumor li {line-height:2;}
+
+/*푸터아래-왼쪽 c/s*/
+#footer .cs_left {text-align:center;}
+#footer .cs_info .tel {font-size:20px;font-weight:700;margin-top:5px;color:#fff;}
+#footer .cs_info .kakao {font-size:18px;font-weight:600;margin-bottom:10px;color:#fff;}
+#footer .cs_info .tel_tim {font-size:13px;font-weight:300;margin-top:5px;}
+#footer .cs_info span {font-size:13px;font-weight:300; padding:0 20px;margin-bottom:10px;}
+#footer .cs_info .mat_tim {font-size:13px;font-weight:300;padding:5px 0;}
+
+/*푸터아래-가운데 회사정보*/
+#footer .company {font-size:13px;margin:0 auto;width:785px;}
+#footer .com_info {font-size:13px;font-weight:300;letter-spacing:-0.025em;}
+#footer .company .first {padding:5px; text-align:center;}
+#footer .company .first span {margin:0 12px;}
+#footer .company .secon {padding:5px; text-align:center;}
+#footer .company .secon span {margin:0 12px;}
+#footer .company .license {padding:5px 0; text-align:center;}
+#footer .company .copy {padding:5px 0; text-align:center;}
+#footer .company .pers {position:absolute;top:0;left:0;}
+
+/*푸터아래-오른쪽 sns*/
+#footer .sns_right {margin-right:0; text-align: center;}
+#footer .sns_right i {padding:5px;font-size:20px; margin:3px;color:#fff;border-radius:50%;}
+
+
+
+/** --------누르면 스크롤 올라가는 TOP버튼--------  **/
+.toTop {position:fixed;bottom:200px;right:200px;}
+.toTop i {background:none;color: #000; font-size:30px;padding:5px; font-weight:300; border:1px solid #000;}
+

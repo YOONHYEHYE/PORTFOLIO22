@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헬리녹스 공식 홈페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+    <!--------헤더 메인메뉴 - 다단메뉴, 반응형, 스크롤 이벤트---수정 22.01.11------->
+    <header id="header">
+        <div class="top">
+            <div class="container">
+                <div class="left">
+                    <a href="#!">Login</a>
+                    <a href="#!">Join</a>
+                </div>
+                <h1>
+                    <a href="#!">
+                        <img src="./img/logo_white.png" alt="">
+                    </a>            
+                </h1>
+                <div class="right">
+                    <a href="#!"><i class="xi-search"></i></a>
+                    <a href="#!"><i class="xi-user-o"></i></a>
+                    <a href="#!"><i class="xi-cart-o"></i></a>                
+                </div>
+            </div>
+        </div>
+        <div class="under">
+            <div class="container">
+                <div class="respn top01">
+                    <a href="#!">로그인</a>
+                    <a href="#!">회원가입</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#!">Outdoor</a>
+                            <ul class="gnb g01">
+                                <li><a href="#!">체어</a></li>
+                                <li><a href="#!">코트</a></li>
+                                <li><a href="#!">테이블</a></li>
+                                <li><a href="#!">텐트</a></li>
+                                <li><a href="#!">쉐이드</a></li>
+                                <li><a href="#!">우산 및 기타</a></li>
+                                <li><a href="#!">도그코트</a></li>
+                                <li><a href="#!">스토리지</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">Home</a>
+                            <ul class="gnb g02">
+                                <li><a href="#!">체어</a></li>
+                                <li><a href="#!">코트</a></li>
+                                <li><a href="#!">테이블</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">Tactical</a>
+                            <ul class="gnb g03">
+                                <li><a href="#!">체어</a></li>
+                                <li><a href="#!">테이블</a></li>
+                                <li><a href="#!">텍티컬 필드 오피스</a></li>
+                                <li><a href="#!">텐트 </a></li>
+                                <li><a href="#!">코트</a></li>
+                                <li><a href="#!">사이드 스트리지 및 우산</a></li>
+                                <li><a href="#!">텍티컬 어드벤스드 스킨</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">Accessories</a>
+                            <ul class="gnb g04">
+                                <li><a href="#!">택티컬 필드 오피스 M 악세서리</a></li>
+                                <li><a href="#!">체어 악세서리</a></li>
+                                <li><a href="#!">워머류</a></li>
+                                <li><a href="#!">테이블 악세서리</a></li>
+                                <li><a href="#!">코트 악세서리</a></li>
+                                <li><a href="#!">텐트 악세서리</a></li>
+                                <li><a href="#!">스틱 악세서리</a></li>
+                                <li><a href="#!">ETC</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">Special/Limited</a>
+                            <ul class="gnb g05">
+                                <li><a href="#!">Leica x Helinox</a></li>
+                                <li><a href="#!">BTS | Helinox</a></li>
+                                <li><a href="#!">퍼니쳐</a></li>
+                                <li><a href="#!">기타</a></li>
+                                <li><a href="#!">포인트 상품</a></li>
+                                <li><a href="#!">헬리녹스 인사이더즈</a></li>
+                                <li><a href="#!">10주년</a></li>
+                                <li><a href="#!">아카이브</a></li>
+                                <li><a href="#!">Special SKU</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">T.E.R.G</a>
+                            <ul class="gnb g06">
+                                <li><a href="#!">백팩&멀티백</a></li>
+                                <li><a href="#!">크로스백&웨이스트백</a></li>
+                                <li><a href="#!">울트라 라이트</a></li>
+                                <li><a href="#!">파우치&ACC</a></li>
+                                <li><a href="#!">멀티링크</a></li>
+                                <li><a href="#!">멀티베스트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">+Information</a>
+                            <ul class="gnb g07">
+                                <li><a href="#!">Our story</a></li>
+                                <li><a href="#!">공지사항</a></li>
+                                <li><a href="#!">자주 묻는 질문</a></li>
+                                <li><a href="#!">상품 문의</a></li>
+                                <li><a href="#!">이벤트</a></li>
+                                <li><a href="#!">A/S</a></li>
+                                <li><a href="#!">HCC</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="respn down01">
+                    <a href="tell:02-730-1928"><i class="xi-call"></i> 02-730-1928</a>
+                    <p><strong>평일 </strong>10:00 ~ 16:00<br>
+                       <strong>주말 </strong>공휴일 휴무<br>
+                       <strong>점심시간 </strong>12:00 ~ 13:00</p>
+                </div>         
+            </div>
+        </div>
+        <div class="mopen">
+            <a href="#!">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>        
+    </header>
+    <main>
+        <!--------메인비주얼 반응형, 슬릭슬라이드---수정 22.01.12------->
+        <section id="visual">
+            <div class="main_slider">
+                <figure class="main01">
+                    <div class="container">
+                        <h3>AT HOME, ANYWHERE</h2>
+                        <p>언제 어디서나 편안한 휴식을 즐길 수 있는 캠핑, 헬리녹스의 제품과 함께 하고 싶어 질 것입니다.</p>
+                        <a href="#!">more</a>
+                    </div>
+                </figure>
+                <figure class="main02">
+                    <div class="container">
+                        <h3>OPEN UP A NEW GENRE</h2>
+                        <p>첨단 기술 노하우를 통해 제작된 초경량 제품들은 아웃도어 브랜드의 새로운 카테고리를 만들어 나갑니다.</p>
+                        <a href="#!">more</a>
+                    </div>
+                </figure>
+                <figure class="main03">
+                    <div class="container">
+                        <h3>A LIGHTER WEIGHT, STRONGER</h2>
+                        <p>헬리녹스는 DAC알루미늄 합금 폴을 사용하는 유일한 브랜드이며, 폴은 가볍고 강하며 사용하기에 편리합니다.</p>
+                        <a href="#!">more</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="btn">
+                <a href="#!"><i class="xi-angle-left-thin"></i></a>
+                <a href="#!"><i class="xi-angle-right-thin"></i></a>
+            </div>
+        </section>  
+        <!--------시트워머, 슬릭슬라이드---수정 22.01.12------->           
+        <section id="content01">
+            <h2>Helinox Seat Warmer</h2>
+            <p>따뜻한 겨울을 위해, 헬리녹스 시트 워머와 함께해보세요</p>
+            <a href="#!">more!</a>
+            <div class="container">
+                <div class="con01">
+                    <a href="#!">
+                        <figure></figure>
+                        <div class="txt">
+                            <h3>헬리녹스 <strong>플리스</strong> 시트워머</h3>
+                            <p>42,000원</p>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="con02">
+                    <a href="#!">
+                        <figure></figure>
+                        <div class="txt">
+                            <h3>헬리녹스 택티컬 필드 커버/체어원<br>블랙/폴리지 그린</h3>
+                            <p>59,000원</p>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="con03">
+                    <a href="#!">
+                        <figure></figure>
+                        <div class="txt">
+                            <h3>헬리녹스 시트워머/체어원<br>코요테탄/포레스트 그린</h3>
+                            <p>56,000원</p>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="con04">
+                    <a href="#!">
+                        <figure></figure>
+                        <div class="txt">
+                            <h3>헬리녹스 시트워머/체어원<br>블루 반다나/레드 반다나</h3>
+                            <p>63,000원</p>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- 추천상품 }-->
+
+
+        <!--{ 라이카 콜라보 banner -->
+        <section id="content02">
+            <h2>
+                <img src="./img/laica-helinox-logo-white.png" alt="">
+            </h2>
+            <p>라이카 X 헬리녹스 스페셜 패키지 에디션은 프리미엄 카메라 브랜드 라이카와의 협업을 통해 탄생했습니다.</p>
+            <a href="#!">more!</a>
+        </section>          
+        <!-- banner }-->  
+
+        <!--{ 베스트셀러 -->
+        <section id="content03">
+            <div class="container">
+                <div class="hd">
+                    <h2>Best Seller</h2>
+                    <a href="#!">more!</a>
+                </div>
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best01.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>블랙메쉬 슬링백</strong>
+                            <span class="price">50,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>1</p>
+                    </a>
+                    
+                </figure>    
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best02.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>비취타올(아이보리/블랙)</strong>
+                            <span class="price">48,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>2</p>
+                    </a>  
+                </figure>    
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best03.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>브이타프 4.0 (블랙)</strong>
+                            <span>1,260,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>3</p>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best04.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>사이드 테이블S (블랙)</strong>
+                            <span>42,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>4</p>
+                    </a>
+                </figure>    
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best05.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>라이트코트(샌드)</strong>
+                            <span>264,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>5</p>
+                    </a>
+
+                </figure>    
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best06.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>Helinox Hot Pack(1Box/10ea)</strong>
+                            <span>10,000원</span>
+                            <i class="xi-cart"></i>
+                        </div>
+                        <p>6</p>
+                    </a>
+
+                </figure>  
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best07.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong> 테이블원 하드탑(멀티캠)</strong>
+                            <span>155,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>7</p>
+                    </a>
+
+                </figure>    
+                <figure>
+                    <a href="#!">
+                        <div class="item-img">
+                            <img src="./img/best08.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <strong>21FW Patta X Helinox Table S<br>Olivine(21.09.27.11AM Online Raffle Only)</strong>
+                            <span>65,000원</span>
+                            <i class="xi-cart"></i>
+                            <i class="xi-heart-o"></i>
+                        </div>
+                        <p>8</p>
+                    </a>
+                </figure>      
+            </div>
+                
+        </section>    
+        <!-- 베스트셀러 }-->
+        
+
+        <!--{ 룩북 banner_slider -->
+        <section id="banner_slider">
+            <div class="container">
+                <div class="pic">
+                    <a href="#!"><figure><img src="./img/sp01.jpg" alt=""></figure></a>
+                    <a href="#!"><figure><img src="./img/sp02.jpg" alt=""></figure></a>
+                    <a href="#!"><figure><img src="./img/sp03.jpg" alt=""></figure></a>
+                </div>
+                <div class="dis">
+                    <div class="dis_con">
+                        <h3>Helinox Look Book</h3>
+                        <p>Groenland with the RTS 겨울캠핑도 헬리녹스!</p>
+                        <a href="#!">more!</a>
+                    </div>
+                </div>
+                <div class="dis">
+                    <div class="dis_con">
+                        <h3>Helinox Look Book</h3>
+                        <p>Tactical Line 헬리녹스의 전략적인 핵심 프로덕트</p>
+                        <a href="#!">more!</a>
+                    </div>
+                </div>
+                <div class="pic">
+                    <a href="#!"><figure><img src="./img/sp04.jpg" alt=""></figure></a>
+                    <a href="#!"><figure><img src="./img/sp05.jpg" alt=""></figure></a>
+                    <a href="#!"><figure><img src="./img/sp06.jpg" alt=""></figure></a>
+                </div>
+            </div>
+        </section>    
+        <!-- 룩북 banner_slider }-->
+<!--{ T.E.R.G 제품 -->
+    <section id="pr_slider">
+        <h2>T.E.R.G line</h2>
+        <div class="container">
+            <div class="slider">
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg01.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 디아더데이</strong>
+                    </div>
+                    <span class="price">168,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg02.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 사코슈 스탠다드 빅</strong>
+                    </div>
+                    
+                    <span class="price">42,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg03.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 데이팩</strong>
+                    </div>
+                    
+                    <span class="price">138,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg04.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 랩탑 크로스 15"</strong>
+                    </div>
+                    
+                    <span class="price">80,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg05.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 데이팩 쓰리웨이</strong>
+                    </div>
+                    
+                    <span class="price">164,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg06.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 라지 웨이스트</strong>
+                    </div>
+                
+                    <span class="price">105,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg07.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 올웨이스퀘어</strong>
+                    </div>
+                    
+                    <span class="price">138,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg08.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그  L파우치 S</strong>
+                    </div>
+                    
+                    <span class="price">24,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <a href="#!"><img src="./img/tg09.jpg" alt=""></a>
+                    </div>
+                    <div id="name">
+                        <strong>터그 ID 케이스</strong>
+                    </div>
+                    
+                    <span class="price">15,000원</span>
+                    <a href="#!"><i class="xi-cart"></i></a>
+                </figure>
+            </div>
+        </div>
+        <div class="arrows">
+            <i class="xi-arrow-left"></i>
+            <i class="xi-arrow-right"></i>
+        </div>
+    </section>    
+    <!-- T.E.R.G 제품 }-->
+        
+
+    </main>
+    <footer id="footer">
+        <ul class="custumor">
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">이용안내</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+            <li><a href="#!">한국어</a></li>
+        </ul>
+        <hr>
+        <div class="container">
+            <div class="cs_left">
+                <ul>
+                    <li class="title">C/S</li>
+                </ul>
+                <ul class="cs_info">
+                    <li class="tel">02-730-1928</li>
+                    <li class="kakao"><i class="xi-kakaotalk"></i> HELINOXCS</li>
+                    <li class="tel_tim">AM 10:00 ~ PM 04:00(주말 및 공휴일 휴무)</li>
+                    <span>점심시간 12:00 ~ 13:00</span>
+                    <li class="mat_tim">HCC 매장 운영시간 PM 11:00 ~ PM 09:00</li>
+                </ul>
+            </div>
+            <div class="company">
+                <ul>
+                    <li class="title">COMPANY</li>
+                </ul>
+                <ul class="com_info">
+                    <li class="first">
+                        <span>대표자명 라영환</span> 
+                        <span>개인정보 보호 책임자 이창희</span>
+                        <span>사업자등록번호 101-86-83690<a href="#!">[사업자정보확인]</a></span>    
+                    </li>
+                    <li class="secon">
+                        <span>통신판매업신고 2020-서울용산-0047</a></span> 
+                        <span>EMAIL) hi@helinox.com</span>
+                        <span>TEL) 02-730-1928</span>
+                    </li>
+                    <li class="license">
+                        <span>(주)헬리녹스의 상표, 제품 디자인 그리고 당사가 운영하는 웹사이트 등에 게재된 저작물과 관련한 모든 지식재산권은 (주)헬리녹스가 보유하고 있습니다.</span>
+                    </li>
+                    <li class="copy">
+                        <span>&copy;2021 Helinox. All Rights Reserved</span> 
+                    </li>
+                </ul>
+            </div>
+            <div class="sns_right">
+                <div class="first">
+                    <a href="#!"><i class="xi-facebook"></i></a>
+                    <a href="#!"><i class="xi-instagram"></i></a>
+                    <a href="#!"><i class="xi-naver"></i></a>
+                </div>
+                <div class="secon">
+                    <a href="#!"><i class="xi-youtube-play"></i></a>
+                    <a href="#!"><i class="xi-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="toTop">
+        <i class="xi-arrow-top"></i>
+    </div>
+</div>
+
+</body>
+
+</html>
